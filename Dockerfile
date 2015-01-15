@@ -15,5 +15,7 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 
 RUN mkdir /data
 
+VOLUME ["/data"]
+
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
