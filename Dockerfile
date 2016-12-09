@@ -1,6 +1,6 @@
 # Credit to https://docs.docker.com/examples/running_ssh_service/
 FROM debian:jessie
-MAINTAINER ccg <ccgdevops@googlegroups.com>
+MAINTAINER https://github.com/muccg/
 
 RUN apt-get update && apt-get install -y openssh-server && apt-get clean
 RUN mkdir /var/run/sshd
